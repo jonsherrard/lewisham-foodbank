@@ -40,7 +40,7 @@ task 'build:jade', 'build src/html from src/jade', ->
 		invoke 'build:handlebars'
 
 task 'build:index', 'build index.html from index.jade', ->
-	exec 'jade index.jade', (err, stdout, stderr) ->
+	exec 'jade -P index.jade', (err, stdout, stderr) ->
 		err && throw err
 		log 'Build Index OK!', 'green'
 
