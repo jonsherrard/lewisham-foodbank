@@ -1,0 +1,42 @@
+include src/templates/header
+.container
+    .navbar
+        a.navbar-brand Lewisham Foodbank
+        ul.nav
+            li
+                a Home
+            li
+                a Donate
+            li
+                a Advice
+            li
+                a Contact Us
+    .span12
+.lsfb-jumbotron
+    .container
+        h3 Lewisham Borough
+        h1 Food Bank
+        p.intro Do you need the support of the new Deptford and New Cross Food Bank?
+        a.btn.btn-large Donate Now
+.container#information
+    .row
+        .span12
+            h1.center.sub-title For the residents of Lewisham.
+    .row
+        .span4
+            p: img.lsfb-image.img-rounded(src='http://i.imgur.com/k8yolfi.jpg')
+            h2.center Money Issues.
+            p If you are hit with a large bill, lose your benefits or just find at the end of the week you have no money, then we are here to help.
+        .span4
+            p: img.lsfb-image.img-rounded(src='http://goo.gl/pABUU')
+            h2.center Come In.
+            p Visit us with a proof of address at 467 New Cross Road, Deptford SE8 6TA Monday to Saturday 11am-2pm.
+        .span4
+            p: img.lsfb-image.img-rounded(src='http://i.imgur.com/Qvlccmp.jpg')
+            h2.center Questions.
+            p 
+                | If you have any questions, please email: 
+                a(href='mailto:contact@lewishamfoodbank.com') contact@lewishamfoodbank.com
+                |  or call 020 8776 5050
+
+include src/templates/footer
