@@ -2,22 +2,23 @@ include src/templates/header
 .container
     .navbar
         a.navbar-brand Lewisham Foodbank
-        ul.nav
-            li
-                a Home
-            li
-                a Donate
-            li
-                a Advice
-            li
-                a Contact Us
+        .nav-collapse.collapse
+            ul.nav
+                li
+                    a Home
+                li
+                    a Donate
+                li
+                    a Advice
+                li
+                    a Contact Us
+        a.button.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
     .span12
 .lsfb-jumbotron
     .container
         h3 Lewisham Borough
         h1 Food Bank
         p.intro Do you need the support of the new Deptford and New Cross Food Bank?
-        a.btn.btn-large Donate Now
 .container#information
     .row
         .span12

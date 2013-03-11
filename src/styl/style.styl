@@ -4,19 +4,42 @@ orange = rgb(230,180,121)
 
 body
 	color #5a5a5a
+	//font-family 'Comic Sans', 'Comic Sans MS', cursive, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", san
 
 .navbar
 	background-color white
 	& a.navbar-brand
 		color pink
+	& ul.nav>li>a, a
+		color orange
+	& a.button
+		display: block;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background: orange
+		float: left;
+		margin: 10px;
+		position absolute
+		top 5px
+		right 20px
+
+@media (min-width: 768px) 
+	.navbar
+		a.button
+			display none
 
 a, a:hover
 	cursor pointer
+
+p
+	margin 20px
 
 .center
 	text-align center
 	
 .lsfb-jumbotron
+	font-size 140%
 	position relative
 	margin-bottom 20px
 	padding 30px 15px
@@ -25,26 +48,15 @@ a, a:hover
 	background-color blue
 
 	& h1
-		font-size 100px
-		line-height 1
+		font-weight bold
 	& h3
-		font-size 60px
-		line-height 1.5
+		font-weight bold
 	& p.intro
 		margin-bottom 20px
 		font-weight 200
 		line-height 1.25
-		font-size 30px
 		margin-left 20%
 		margin-right 20%
-	& a.btn
-		color blue
-		background-color white
-		border-color white
-		font-size 21px
-		padding 18px 24px
-		&:hover
-			background-color darken(white, 4%)
 
 img.lsfb-image
 	width 100%	
@@ -59,8 +71,11 @@ img.lsfb-image
 		margin-top 20px
 		padding 30px 15px
 		color #fff
-		background-color orange
-		& a, a:hover, a:visited
+		text-align center
+		background-color pink
+		& a, a:visited
 			color #fff
+		& a:hover
+			darken(#fff, 10%)
 		& p.tiny-footer
 			padding-top 20px
